@@ -17,6 +17,8 @@ import './appStyles.css'
 import styles from './appStyles.module.css'
 import Form from './components/Form'
 import LifeCycleA from './components/LifeCycleA'
+import FragmentDemo from './components/FragmentDemo'
+import Table from './components/Table'
 
 class App extends Component {
   render() {
@@ -48,7 +50,9 @@ class App extends Component {
         <h1 className='error'>Error</h1>
         <h1 className={styles.success}>Success</h1> */}
         {/* <Form /> */}
-        <LifeCycleA />
+        {/* <LifeCycleA /> */}
+        {/* <FragmentDemo /> */}
+        <Table />
       </div>
     )
   }

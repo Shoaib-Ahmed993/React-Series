@@ -10,13 +10,27 @@ class LifeCycleB extends Component {
         console.log('LifeCycleB Constructor')
     }
 
-    static getDerivedStateFromProps(props, state){
+    static getDerivedStateFromProps(props, state) {
         console.log('LifeCycleB getDerivedStateFromProps')
         return null
     }
 
-    componentDidMount(){
+    componentDidMount() {
         console.log('LifeCycleB componentDidMount')
+    }
+
+    shouldComponentUpdate() {
+        console.log('LifeCycleB shouldComponentUpdate')
+        return true
+    }
+
+    getSnapshotBeforeUpdate(prevProps, prevState) {
+        console.log('LifeCycleB getSnapshotBeforeUpdate')
+        return null
+    }
+
+    componentDidUpdate() {
+        console.log('LifeCycleB componentDidUpdate')
     }
 
     render() {
